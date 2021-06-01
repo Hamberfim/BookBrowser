@@ -1,2 +1,2 @@
 ### Book Browser
-a website that can search through the text
+A website that can search through the text of a book and provide some stats about the book.
