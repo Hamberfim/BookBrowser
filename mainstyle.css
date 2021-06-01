@@ -20,3 +20,14 @@ height: 100%;
 img {
     padding: 10px;
 }
+
+.displayBox {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scroll-box {
+    overflow-y: auto;
+    height: 483px;
+    padding: 0.5rem;
+}
