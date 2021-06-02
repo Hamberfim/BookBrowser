@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        Some content here.
+                        <a href="https://github.com/Hamberfim" target="_blank">adhamlin A.K.A., Hamberfim on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -53,12 +53,12 @@
                         <div class="input-group">
                             <input type="text" class="form-control" id="keyword" placeholder="Search...">
                             <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Search</button>
+                                <button class="btn btn-secondary" type="button" onclick="performMark()">Search</button>
                             </span>
                         </div>
                     </div>
                     <div class="card-footer text-muted" id="searchStat">
-                        Search Stats here
+                        <!-- Search Stats populate here -->
                     </div>
                 </div>
                 <!-- END search widget-->
@@ -72,10 +72,14 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul.<ul class="list-unstyled mb-0">
-                                    <li><a href="#">Alice In Wonderland</a></li>
-                                    <li><a href="#">Limbo</a></li>
-                                    <li><a href="#">Superstition In Medicine</a></li>
-                                </ul>
+                                    <li><a href="#"
+                                            onclick="loadBook('AliceInWonderland.txt','Alice in Wonderland')">Alice In
+                                            Wonderland</a></li>
+                                    <li><a href="#" onclick="loadBook('Limbo.txt','Limbo')">Limbo</a></li>
+                                    <li><a href="#"
+                                            onclick="loadBook('SuperstitionInMedicine.txt','Superstition In Medicine')">Superstition
+                                            In Medicine</a></li>
+                                    </ul>
                             </div>
                         </div>
                     </div>
@@ -91,7 +95,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-unstyled mb-0" id="mostUsed">
-
+                                    <!-- Most used words populated here -->
                                 </ul>
                             </div>
                         </div>
@@ -108,7 +112,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-unstyled mb-0" id="leastUsed">
-
+                                    <!-- Least used words populated here -->
                                 </ul>
                             </div>
                         </div>
@@ -125,7 +129,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-unstyled mb-0" id="docStats">
-
+                                    <li id="docLength"></li>
+                                    <li id="wordCount"></li>
+                                    <li id="charCount"></li>
                                 </ul>
                             </div>
                         </div>
@@ -138,7 +144,12 @@
     </div>
     <!-- funcutionality scripts-->
     <script src="js/SearchString.js"></script>
-    
+    <script id="template-ul-items" type="text/template">
+        <li>
+           {{val}}
+        </li>    
+    </script>
+
     <!-- fontawesome JavaScript -->
     <script src="https://kit.fontawesome.com/9664c8b16b.js"></script>
 
