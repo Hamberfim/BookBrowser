@@ -19,11 +19,11 @@
             <!-- masthead -->
             <div class="col-md-12">
                 <!--header img-->
-                <img src="img/BookBrowserLogo_sm.png" alt="Book Browser logo" class="responsive logo">
+                <img src="img/BookBrowserLogo_sm.png" alt="Book Browser logo" class="responsive my-3">
             </div>
             <!-- main content -->
             <div class="col-md-8">
-                <!-- card controls are card header, card body and card footer, with a botom margin of 4 (mb-4) -->
+                <!-- MAIN Viewer card controls are card header, card body and card footer, with a botom margin of 4 (mb-4) -->
                 <div class="card mb-4">
                     <!-- card header -->
                     <h2 class="card-header" id="fileName">Book Title Here</h2>
@@ -43,7 +43,7 @@
             <div class="col-md-4">
                 <!-- side card control -->
                 <!-- search widget-->
-                <div class="card mb-4">
+                <div class="card mb-3">
                     <!-- card header-->
                     <h5 class="card-header" id="">Search</h5>
                     <!-- card body -->
@@ -62,7 +62,7 @@
                 </div>
                 <!-- END search widget-->
                 <!-- Select a book widget -->
-                <div class="card mb-4">
+                <div class="card my-3">
                     <!-- card header-->
                     <h5 class="card-header" id="">Select a Book</h5>
                     <!-- card body -->
@@ -74,7 +74,6 @@
                                     <li><a href="#">a book</a></li>
                                     <li><a href="#">a book</a></li>
                                     <li><a href="#">a book</a></li>
-                                <!-- STOPPED HERE ///////   33:46  https://youtu.be/KEvLAe_2jXo //////   -->
                                 </ul>
                             </div>
                         </div>
@@ -82,35 +81,53 @@
                 </div>
                 <!-- END select a book widget -->
                 <!-- Most used words widget-->
-                <div class="card mb-4">
+                <div class="card my-3">
                     <!-- card header-->
                     <h5 class="card-header" id="">Most used words</h5>
                     <!-- card body -->
                     <div class="card-body">
                         <!-- viewer -->
-                        <div class="displayBox" id=""></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-unstyled mb-0" id="mostUsed">
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- END most used words widget-->
                 <!-- Least used words widget -->
-                <div class="card mb-4">
+                <div class="card my-3">
                     <!-- card header-->
                     <h5 class="card-header" id="">Least used words</h5>
                     <!-- card body -->
                     <div class="card-body">
                         <!-- viewer -->
-                        <div class="displayBox" id=""></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-unstyled mb-0" id="leastUsed">
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- END least used words widget-->
                 <!-- Doc stats widegt -->
-                <div class="card mb-4">
+                <div class="card my-3">
                     <!-- card header-->
                     <h5 class="card-header" id="">Documant Stats</h5>
                     <!-- card body -->
                     <div class="card-body">
                         <!-- viewer -->
-                        <div class="displayBox" id=""></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-unstyled mb-0" id="docStats">
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- END doc stats widget-->
